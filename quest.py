@@ -61,7 +61,9 @@ def cave_door():
     print("It flares to life, casting flickering shadows on the rock face before you.")
     print("It does nothing to illuminate the stygian blackness of the cave.")
     print("You walk in.")
-    print("\n \n")
+    import time
+    time.sleep(12)
+    print("\n \n \n")
     print("You walk until you come across a door. It has a knocker on it.")
     print("Do you knock on the door or do you walk past it?")
 
