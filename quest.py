@@ -16,7 +16,7 @@ Do you take the left fork or the right fork?""")
 
 
 def deeper_forest():
-    print("You take the right fork. It is growing darker by the minute, but you keep walking further into the forest.")
+    print("You take the right fork. It is growing darker by the minute, but you keep walking farther into the forest.")
     print("You notice a smaller trail branching off the main trail.")
     print("Do you take the side path or do you stick to the main trail?")
 
@@ -44,7 +44,7 @@ def pool():
 def cave_entrance():
     print('You decide "no detours" and continue along the trail.')
     print("It is nearly fully dark now. You come to the entrance of a cave. It is set into the side of a mountain.")
-    print("There is an old torch in a rusted bracket bolted to the mountain face to the right of the cave entrance.")
+    print("There is an old torch in a rusted bracket bolted to the mountain face by the cave entrance.")
     print("What shall you do next?")
     print("Do you go in or stay out?")
 
@@ -88,7 +88,7 @@ def wraith():
 
 
 def crystal_cavern():
-    print("You are no fool, you make haste and flee further into the cave.")
+    print("You are no fool, you make haste and flee deeper into the cave.")
     print("You hear the sound of water dripping in a vast cavern up ahead.")
     print("You round a bend and a sight of unpeakable beauty greets you -")
     print("A cavern, large and wide and filled with brilliant red crystals, some taller than you are.")
@@ -108,15 +108,15 @@ def no_crystal():
     print("You leave the crystals be and continue through the cave.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
-    print("You squeeze through the hole and find yourself in an even larger cavern,")
-    print("this one houses an enormous pile of gold and jewels, antique armor and other finery.")
+    print("You squeeze through the hole and find yourself in an even larger cavern.")
+    print("This one houses an enormous pile of gold and jewels, antique armor and other finery.")
     print("A loud voice cuts through the stillness, startling you -")
     dragon_speaks_no_crystal()
 
 
 def dragon_speaks_no_crystal():
-    print('"WHAT HAVE YOU TO SHOW ME WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
-    print('"THE PLACE YOU COME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
+    print('"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
+    print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
     print("Will you use words or pantomine?")
 
@@ -128,18 +128,18 @@ def dragon_speaks_no_crystal():
 
 
 def yes_crystal():
-    print("You break one of the crystals off be and slip it into your pocket, then continue through the cave.")
+    print("You breakoff one of the crystals and slip it into your pocket.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
-    print("You squeeze through the hole and find yourself in an even larger cavern,")
-    print("this one houses an enormous pile of gold and jewels, antique armor and other finery.")
+    print("You squeeze through the hole and find yourself in an even larger cavern.")
+    print("This one houses an enormous pile of gold and jewels, antique armor and other finery.")
     print("A loud voice cuts through the stillness, startling you -")
     dragon_speaks_yes_crystal()
 
 
 def dragon_speaks_yes_crystal():
-    print('"WHAT HAVE YOU TO SHOW ME WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
-    print('"THE PLACE YOU COME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
+    print('"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
+    print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
     print("Will you show the dragon or tell the dragon?")
 
@@ -153,7 +153,8 @@ def dragon_speaks_yes_crystal():
 def dragon_bribe():
     print("From out of your pocket you draw the crystal you took from the cystal cavern.")
     print("You hold it aloft. It catches the dim light and sparkles like captured flame.")
-    print('"THIS PLEASES ME. THIS I CAN ADD TO MY HOARDE. NOW I KNOW WHAT THE MYSTERIOUS CAVERN CONTAINS," the dragon says.')
+    print('"AH, I SEE. IT IS A CAVERN OF CRYSTAL. NOW I KNOW WHAT THE MYSTERIOUS CAVERN CONTAINS," the dragon says.')
+    print("THIS TRINKET PLEASES ME. THIS I CAN ADD TO MY HOARDE.")
     print('"YOU WILL GIVE THAT TO ME AND I WILL ALLOW YOU TO PASS THROUGH MY CAVE UNHARMED."')
     
     import time
@@ -169,8 +170,8 @@ def cave_travel():
     print("You begin to see signs of mining work. A cart track appears,")
     print("then a mine cart, sitting alone on the tracks, half filled with ore.")
     print("You walk further along the tunnel, seeing picks, axes, half-burnt torches, and other signs.")
-    print("Then you come to a door next to which are hung helmets, more tools, and surplus torches.")
-    print("A light seeps out from beneath the door.")
+    print("You come to a door next to which are hung helmets, more tools, and surplus torches.")
+    print("Light seeps out from beneath the door.")
     print("You open it.")
     
     import time
@@ -182,7 +183,7 @@ def dwarven_tavern():
     print("/n")
     print("_______________________________________________________________________________")
     print("As soon as you open the door you are greeted by a wall of noise.")
-    print("The room is filled with dwarves, enjoying pints of ale after a long day in the mine.")
+    print("The room is filled with dwarves enjoying pints of ale after a long day in the mine.")
     print("They are making jokes and laughing, singing songs and having drinking contests.")
     print("Should you keep to yourself or buy everyone a round?")
 
@@ -199,6 +200,7 @@ def dwarf_talk():
     print("Talk turns to your quest, and the dwarves learn that you are looking for a way out of the cave.")
     print("They tell you they will show you a way out, on one condition:")
     print("You will come back and visit them sometime.")
+    print("\n")
     print("Do you agree and take their way out or do you go your own way?")
 
     choice = input("> ")
@@ -250,14 +252,14 @@ def sleep_it_off():
 def mine_cart():
     print("You agree to take the dwarves' way out of the cave.")
     print("You drink for a few more hours, then the dwarves say it's time to go.")
-    print("They want to go with you, they say they like taking this route while drunk.")
+    print("They want to go with you, they say they like taking this route while in their cups.")
     print("They take you to a mine cart at the top of an incline. They tell you to get in it.")
     print("You get in, and the others take up positions on both sides of the cart.")
     print('Together they yell "One! Two! Three!" and on three they begin running full tilt,')
     print("pushing the cart with them as they run. \n \n \n \n \n \n")
     print("One by one they hop in with you, and the cart hurtles along the track.")
     print("It twists and turns at terrifying speed. The dwarves shout excitedly.")
-    print("Then the cart begins to slow, and one of the dwarves begins to emply the hand brake.")
+    print("Then the cart begins to slow, and one of the dwarves employs the hand brake.")
     print("You slow to a stop and the dwarves get out.")
     print("They point you down a passage and then they leave,")
     print("clapping you on the back one last time in goodbye.")
@@ -267,8 +269,8 @@ def mine_cart():
 def exit_cave():
     print("You follow the passage, noting how sweet and clean the air smells.")
     print("The smell of vegetation and fresh air grows stronger, and the passage grows brighter.")
-    print("You find a cave exit, and you walk out it under the open sky.")
-    print("You laugh with relief. You have made it!")
+    print("You find a cave exit, and you walk out to find yourself under the open sky.")
+    print("You laugh with relief. You made it!")
     print("You are none the richer in worldly goods,") 
     print("but you've gained memories to last a lifetime.")
     print("THE END.")
@@ -288,7 +290,7 @@ def dead(why):
 def fish_death():
     print("You have chosen the pool. You jump in and begin to swim to the bottom.") 
     print("It is deeper than it looks, but you keep swimming, undetered.")
-    print("You reach your hand out to grab at the sparkling thing at the bottom of the pool. It is a golden crown with jewels.")
+    print("You reach your hand out to grasp the sparkling thing at the bottom of the pool. It is a golden crown with jewels.")
     print("Suddenly, the faint light from above you grows dim. You are in the shadow of a huge fish.")
     dead("The fish eats you, and you join the crown at the bottom of the pool.")
 
@@ -301,13 +303,13 @@ def warg_death():
     print("You shudder and look away from the cave entrance. Something about it doesn't feel right.")
     print("You decide to make camp in a thicket 40 paces from the cave entrance.")
     print("You light a feeble fire to keep away the cold and damp and settle down to rest for the night.")
-    print("As you sleep, a warg comes upon your prone, slumbering body.")
+    print("As you sleep, a warg comes upon your slumbering body.")
     dead("She eats you, and you haunt the forest near the cave forever.")
 
 def wraith_death():
     print("You decide to fight the wraith.")
     print("You unsheathe your knife, but you are a littly rusty with it.")
-    print("You are no match for the wraith. It runs a silvery, ghostly sword through your belly.")
+    print("You are no match for the wraith. It runs a silvery ghost sword through your belly.")
     dead("The cave now has another ghostly resident.")
 
 def dragon_death():
