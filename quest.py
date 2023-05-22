@@ -156,7 +156,7 @@ def dragon_bribe():
     print("\nFrom out of your pocket you draw the crystal you took from the cystal cavern.")
     print("You hold it aloft. It catches the dim light and sparkles like captured flame.")
     print('"AH, I SEE. IT IS A CAVERN OF CRYSTAL. NOW I KNOW WHAT THE MYSTERIOUS CAVERN CONTAINS," the dragon says.')
-    print("THIS TRINKET PLEASES ME. THIS I CAN ADD TO MY HOARDE.")
+    print('"THIS TRINKET PLEASES ME. THIS I CAN ADD TO MY HOARDE."')
     print('"YOU WILL GIVE THAT TO ME AND I WILL ALLOW YOU TO PASS THROUGH MY CAVE UNHARMED."')
     
     import time
@@ -186,11 +186,15 @@ def dwarven_tavern():
     print("Should you keep to yourself or buy everyone a round?")
 
     choice = input("> ")
-    if "keep" or "yourself" in choice:
+    if "keep" in choice:
+        print("\nYou decide to keep to yourself.")
+        get_too_drunk()
+    elif "yourself" in choice:
         print("\nYou decide to keep to yourself.")
         get_too_drunk()
     else:
         dwarf_talk()
+
 
 def dwarf_talk():
     print("\nYou buy everyone a round. They cheer and the largest group welcomes you to join them.")
