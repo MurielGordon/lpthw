@@ -62,7 +62,7 @@ def cave_door():
     print("It does nothing to illuminate the stygian blackness of the cave.")
     print("You walk in.")
     import time
-    time.sleep(12)
+    time.sleep(10)
     print("\n \n \n")
     print("You walk until you come across a door. It has a knocker on it.")
     print("Do you knock on the door or do you walk past it?")
@@ -96,12 +96,14 @@ def crystal_cavern():
     print("A cavern, large and wide and filled with brilliant red crystals, some taller than you are.")
     print("You pause for a moment, taking it in.")
     print("You know you cannot linger here, but you feel compelled to take a crystal with you.")
-    print("Do you take a crystal?")
+    print("Do you take a crystal? Yes or no?")
 
     choice = input("> ")
 
-    if "take" or "yes" in choice:
+    if "yes" in choice:
         yes_crystal()
+    elif "not" in choice:
+        no_crystal()
     else:
         no_crystal()
 
@@ -130,7 +132,7 @@ def dragon_speaks_no_crystal():
 
 
 def yes_crystal():
-    print("\nYou breakoff one of the crystals and slip it into your pocket.")
+    print("\nYou break off one of the crystals and slip it into your pocket.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
     print("You squeeze through the hole and find yourself in an even larger cavern.")
