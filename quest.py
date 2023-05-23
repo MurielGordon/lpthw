@@ -232,6 +232,10 @@ def get_too_drunk():
 
 def sleep_it_off():
     print("\nYou decide to sleep it off. Exploration can wait until the morning. \n \n \n \n")
+
+    import time
+    time.sleep(4)
+
     print("You wake the next day feeling terrible.")
     print("You get up and start on your way.")
     print("You come to a forked passage.")
