@@ -8,5 +8,4 @@ cat_face = """
 """
 
 print(cat_face)
-
-print("what on god's green earth is going on with git")
+print("\n \n \n¯\_(ツ)_/¯")
