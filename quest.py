@@ -12,10 +12,15 @@ Do you take the left fork or the right fork?""")
     elif choice == "right":
         deeper_forest()
     else:
-        dead("You choose neither left nor right. You stand in the same place until you waste away.")
+        import time
+        time.sleep(1.8)
+        print("\nYou choose neither left nor right. You stand in the same place until you waste away.")
+        dead("You have learned a valuable lesson about following directions.")
 
 
 def deeper_forest():
+    import time
+    time.sleep(1.8)
     print("\nYou take the right fork. It is growing darker by the minute, but you keep walking farther into the forest.")
     print("You notice a smaller trail branching off the main trail.")
     print("Do you take the side path or do you stick to the main trail?")
@@ -29,6 +34,8 @@ def deeper_forest():
 
 
 def pool():
+    import time
+    time.sleep(1.8)
     print("\nYou take the left fork. After you walk a while you come across a deep, clear pool of water.")
     print("You think you see something glittering at the bottom of the pool.")
     print("Do you jump in or walk around it?")
@@ -42,6 +49,8 @@ def pool():
 
 
 def cave_entrance():
+    import time
+    time.sleep(1.8)
     print('\nYou decide "no detours" and continue along the trail.')
     print("It is nearly fully dark now. You come to the entrance of a cave. It is set into the side of a mountain.")
     print("There is an old torch in a rusted bracket bolted to the mountain face by the cave entrance.")
@@ -57,6 +66,8 @@ def cave_entrance():
 
 
 def cave_door():
+    import time
+    time.sleep(1.8)
     print("\nYou grab the old torch and you light it with your flint and steel.")
     print("It flares to life, casting flickering shadows on the rock face before you.")
     print("It does nothing to illuminate the stygian blackness of the cave.")
@@ -76,6 +87,8 @@ def cave_door():
 
 
 def wraith():
+    import time
+    time.sleep(1.8)
     print("\nYou knock on the door.")
     print("It creaks open.")
     print("A wraith emerges.")
@@ -90,12 +103,14 @@ def wraith():
 
 
 def crystal_cavern():
+    import time
+    time.sleep(1.8)
     print("\nYou are no fool, you make haste and flee deeper into the cave.")
     print("You hear the sound of water dripping in a vast cavern up ahead.")
     print("You round a bend and a sight of unpeakable beauty greets you -")
     print("A cavern, large and wide and filled with brilliant red crystals, some taller than you are.")
     print("You pause for a moment, taking it in.")
-    print("You know you cannot linger here, but you feel compelled to take a crystal with you.")
+    print("You know you can't linger here, but you feel compelled to take a crystal with you.")
     print("Do you take a crystal? Yes or no?")
 
     choice = input("> ")
@@ -109,6 +124,8 @@ def crystal_cavern():
 
 
 def no_crystal():
+    import time
+    time.sleep(1.8)
     print("\nYou leave the crystals be and continue through the cave.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
@@ -119,6 +136,8 @@ def no_crystal():
 
 
 def dragon_speaks_no_crystal():
+    import time
+    time.sleep(1.8)
     print('\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
@@ -126,14 +145,20 @@ def dragon_speaks_no_crystal():
 
     choice = input("> ")
     if "words" in choice:
-        print("You begin to tell the dragon about the wonderful cavern you just left.")
+        import time
+        time.sleep(1.8)
+        print("\nYou begin to tell the dragon about the wonderful cavern you just left.")
         dragon_death()
     else:
-        print('You lift your arms and struggles to find a way to say "crysal" using just your hands.')
+        import time
+        time.sleep(1.8)
+        print('\nYou lift your arms and struggle to find a way to say "crysal" using just your hands.')
         dragon_death()
 
 
 def yes_crystal():
+    import time
+    time.sleep(1.8)
     print("\nYou break off one of the crystals and slip it into your pocket.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
@@ -144,6 +169,8 @@ def yes_crystal():
 
 
 def dragon_speaks_yes_crystal():
+    import time
+    time.sleep(16)
     print('\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
@@ -153,10 +180,13 @@ def dragon_speaks_yes_crystal():
     if "show" in choice:
         dragon_bribe()
     else:
+        print("\nYou begin to tell the dragon about the wonderful cavern you just left.")
         dragon_death()
 
 
 def dragon_bribe():
+    import time
+    time.sleep(1.8)
     print("\nFrom out of your pocket you draw the crystal you took from the cystal cavern.")
     print("You hold it aloft. It catches the dim light and sparkles like captured flame.")
     print('"AH, I SEE. IT IS A CAVERN OF CRYSTAL. NOW I KNOW WHAT THE MYSTERIOUS CAVERN CONTAINS," the dragon says.')
@@ -169,6 +199,8 @@ def dragon_bribe():
 
 
 def cave_travel():
+    import time
+    time.sleep(1.8)
     print("\nYou pass through the dragon's cave and find yourself in a narrow passage.")
     print("The passage winds left, right, right, then left again.")
     print("You begin to see signs of mining work. A cart track appears,")
@@ -184,6 +216,8 @@ def cave_travel():
 
 
 def dwarven_tavern():
+    import time
+    time.sleep(1.8)
     print("\nAs soon as you open the door you are greeted by a wall of noise.")
     print("The room is filled with dwarves enjoying pints of ale after a long day in the mine.")
     print("They are making jokes and laughing, singing songs and having drinking contests.")
@@ -191,9 +225,13 @@ def dwarven_tavern():
 
     choice = input("> ")
     if "keep" in choice:
+        import time
+        time.sleep(1.8)
         print("\nYou decide to keep to yourself.")
         get_too_drunk()
     elif "yourself" in choice:
+        import time
+        time.sleep(1.8)
         print("\nYou decide to keep to yourself.")
         get_too_drunk()
     else:
@@ -201,6 +239,8 @@ def dwarven_tavern():
 
 
 def dwarf_talk():
+    import time
+    time.sleep(1.8)
     print("\nYou buy everyone a round. They cheer and the largest group welcomes you to join them.")
     print("The dwarves are friendly and fun, and you have a great evening.")
     print("Talk turns to your quest, and the dwarves learn that you are looking for a way out of the cave.")
@@ -213,12 +253,16 @@ def dwarf_talk():
     if "agree" or "take" in choice:
         mine_cart()
     else:
+        import time
+        time.sleep(1.8)
         print("\nYou decide to take your own path out of the cave.")
         print("The dwarves are insulted and you start to drink to cover up the awkwardness.")
         get_too_drunk()
 
 
 def get_too_drunk():
+    import time
+    time.sleep(1)
     print("\nYou down more and more pints of ale until you become very drunk.")
     print("The tavern begins to empty out as dwarves go back to their homes for the night.")
     print("You find yourself in an empty tavern, with the barkeep wiping down tables and putting away glasses.")
@@ -228,6 +272,8 @@ def get_too_drunk():
     if "sleep" in choice:
         sleep_it_off()
     else:
+        import time
+        time.sleep(1.8)
         print("\nYou decide to go find a way out tonight.")
         print("You stumble out of the tavern and into the passage you came through.")
         print("You turn down a new passage, too drunk to read the warning signs posted.")
@@ -235,7 +281,9 @@ def get_too_drunk():
 
 
 def sleep_it_off():
-    print("\nYou decide to sleep it off. Exploration can wait until the morning. \n \n \n \n")
+    import time
+    time.sleep(1.8)
+    print("\nYou decide to sleep it off. Exploration can wait until the morning. \n\n\n\n")
 
     import time
     time.sleep(4)
@@ -248,9 +296,13 @@ def sleep_it_off():
 
     choice = input("> ")
     if "nose" in choice:
+        import time
+        time.sleep(1.8)
         print("\nYou decide to follow your nose.")
         exit_cave()
     else:
+        import time
+        time.sleep(1.8)
         print("\nYou decide to follow your eyes.")
         print("You walk toward the light, it gets brigther and brighter.")
         print("As you get closer to the light it begins to look strange.")
@@ -260,6 +312,8 @@ def sleep_it_off():
 
 
 def mine_cart():
+    import time
+    time.sleep(1.8)
     print("\nYou agree to take the dwarves' way out of the cave.")
     print("You drink for a few more hours, then the dwarves say it's time to go.")
     print("They want to go with you, they say they like taking this route while in their cups.")
@@ -277,6 +331,8 @@ def mine_cart():
 
 
 def exit_cave():
+    import time
+    time.sleep(1)
     print("\nYou follow the passage, noting how sweet and clean the air smells.")
     print("The smell of vegetation and fresh air grows stronger, and the passage grows brighter.")
     print("You find a cave exit, and you walk out to find yourself under the open sky.")
@@ -290,7 +346,7 @@ def exit_cave():
 # the main death exit
 
 def dead(why):
-    print(why, "You have died. So ends the quest of another traveler.")
+    print(why, "\nYou have died. So ends the quest of another traveler.")
     print("THE END.")
     exit(0)
 
@@ -298,6 +354,8 @@ def dead(why):
 # the ways you can die
 
 def fish_death():
+    import time
+    time.sleep(1.8)
     print("\nYou have chosen the pool. You jump in and begin to swim to the bottom.") 
     print("It is deeper than it looks, but you keep swimming, undetered.")
     print("You reach your hand out to grasp the sparkling thing at the bottom of the pool. It is a golden crown with jewels.")
@@ -305,11 +363,15 @@ def fish_death():
     dead("The fish eats you, and you join the crown at the bottom of the pool.")
 
 def manticore_death():
+    import time
+    time.sleep(1.8)
     print("\nYou start down the side path.")
     print("You hear a sound behind you. Hooves thudding on the forest floor.")
     dead("A manticore has found you. It leaps onto your back and tears your throat out.")
 
 def warg_death():
+    import time
+    time.sleep(1.8)
     print("\nYou shudder and look away from the cave entrance. Something about it doesn't feel right.")
     print("You decide to make camp in a thicket 40 paces from the cave entrance.")
     print("You light a feeble fire to keep away the cold and damp and settle down to rest for the night.")
@@ -317,13 +379,17 @@ def warg_death():
     dead("She eats you, and you haunt the forest near the cave forever.")
 
 def wraith_death():
+    import time
+    time.sleep(1.8)
     print("\nYou decide to fight the wraith.")
     print("You unsheathe your knife, but you are a littly rusty with it.")
     print("You are no match for the wraith. It runs a silvery ghost sword through your belly.")
     dead("The cave now has another ghostly resident.")
 
 def dragon_death():
-    print("The dragon interrupts you:")
+    import time
+    time.sleep(4)
+    print("\nThe dragon interrupts you:")
     print('\n"YOUR PATHETIC ATTEMPTS AT COMMUNICATION DO NOT PLEASE ME!" the dragon interrupts.')
     print('"WHAT GOOD TO ME ARE THESE FEEBLE GESTURES? I CANNOT ADD THEM TO MY HOARDE."')
     dead("The dragon lets loose a torrent of fire from its mouth, burning you to a crisp.")
