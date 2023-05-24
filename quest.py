@@ -107,8 +107,10 @@ def crystal_cavern():
     time.sleep(1.8)
     print("\nYou are no fool, you make haste and flee deeper into the cave.")
     print("You hear the sound of water dripping in a vast cavern up ahead.")
-    print("You round a bend and a sight of unpeakable beauty greets you -")
-    print("A cavern, large and wide and filled with brilliant red crystals, some taller than you are.")
+    print("You round a bend and a sight of unimaginable beauty greets you -")
+    import time
+    time.sleep(8)
+    print("\n\n\nA cavern, large and wide and filled with brilliant red crystals, some taller than you are.")
     print("You pause for a moment, taking it in.")
     print("You know you can't linger here, but you feel compelled to take a crystal with you.")
     print("Do you take a crystal? Yes or no?")
@@ -129,7 +131,9 @@ def no_crystal():
     print("\nYou leave the crystals be and continue through the cave.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
-    print("You squeeze through the hole and find yourself in an even larger cavern.")
+    import time
+    time.sleep(12)
+    print("\n\n\nYou squeeze through the hole and find yourself in an even larger cavern.")
     print("This one houses an enormous pile of gold and jewels, antique armor and other finery.")
     print("A loud voice cuts through the stillness, startling you -")
     dragon_speaks_no_crystal()
@@ -162,7 +166,9 @@ def yes_crystal():
     print("\nYou break off one of the crystals and slip it into your pocket.")
     print("At the end of the cavern you find a narrow hole, just wide enough for you to squeeze through.")
     print("A sulferous smell wafts through the hole. It is your only way through.")
-    print("You squeeze through the hole and find yourself in an even larger cavern.")
+    import time
+    time.sleep(12)
+    print("\n\n\nYou squeeze through the hole and find yourself in an even larger cavern.")
     print("This one houses an enormous pile of gold and jewels, antique armor and other finery.")
     print("A loud voice cuts through the stillness, startling you -")
     dragon_speaks_yes_crystal()
@@ -170,7 +176,7 @@ def yes_crystal():
 
 def dragon_speaks_yes_crystal():
     import time
-    time.sleep(16)
+    time.sleep(18)
     print('\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
@@ -188,7 +194,7 @@ def dragon_bribe():
     import time
     time.sleep(1.8)
     print("\nFrom out of your pocket you draw the crystal you took from the cystal cavern.")
-    print("You hold it aloft. It catches the dim light and sparkles like captured flame.")
+    print("You hold it aloft. It catches the light and sparkles like captured flame.")
     print('"AH, I SEE. IT IS A CAVERN OF CRYSTAL. NOW I KNOW WHAT THE MYSTERIOUS CAVERN CONTAINS," the dragon says.')
     print('"THIS TRINKET PLEASES ME. THIS I CAN ADD TO MY HOARDE."')
     print('"YOU WILL GIVE THAT TO ME AND I WILL ALLOW YOU TO PASS THROUGH MY CAVE UNHARMED."')
@@ -205,13 +211,15 @@ def cave_travel():
     print("The passage winds left, right, right, then left again.")
     print("You begin to see signs of mining work. A cart track appears,")
     print("then a mine cart, sitting alone on the tracks, half filled with ore.")
-    print("You walk further along the tunnel, seeing picks, axes, half-burnt torches, and other signs.")
+    import time
+    time.sleep(10)
+    print("\nYou walk further along the tunnel, seeing picks, axes, half-burnt torches, and other signs.")
     print("You come to a door next to which are hung helmets, more tools, and surplus torches.")
     print("Light seeps out from beneath the door.")
     print("You open it.")
     
     import time
-    time.sleep(24)
+    time.sleep(10)
     dwarven_tavern()
 
 
@@ -242,12 +250,15 @@ def dwarf_talk():
     import time
     time.sleep(1.8)
     print("\nYou buy everyone a round. They cheer and the largest group welcomes you to join them.")
-    print("The dwarves are friendly and fun, and you have a great evening.")
+    print("The dwarves are friendly and you have a great evening.")
     print("Talk turns to your quest, and the dwarves learn that you are looking for a way out of the cave.")
     print("They tell you they will show you a way out, on one condition:")
-    print("You will come back and visit them sometime.")
-    print("\n")
-    print("Do you agree and take their way out or do you go your own way?")
+    import time
+    time.sleep(10)
+    print("\nYou will come back and visit them sometime.")
+    import time
+    time.sleep(3)
+    print("\nDo you agree and take their way out or do you go your own way?")
 
     choice = input("> ")
     if "agree" or "take" in choice:
@@ -320,13 +331,17 @@ def mine_cart():
     print("They take you to a mine cart at the top of an incline. They tell you to get in it.")
     print("You get in, and the others take up positions on both sides of the cart.")
     print('Together they yell "One! Two! Three!" and on three they begin running full tilt,')
-    print("pushing the cart with them as they run. \n \n \n \n \n \n")
-    print("One by one they hop in with you, and the cart hurtles along the track.")
+    print("pushing the cart along as they run.")
+    import time
+    time.sleep(20)
+    print("\n\n\n\n\n\nOne by one they hop in with you, and the cart hurtles along the track.")
     print("It twists and turns at terrifying speed. The dwarves shout excitedly.")
     print("Then the cart begins to slow, and one of the dwarves employs the hand brake.")
     print("You slow to a stop and the dwarves get out.")
     print("They point you down a passage and then they leave,")
     print("clapping you on the back one last time in goodbye.")
+    import time
+    time.sleep(18)
     exit_cave()
 
 
