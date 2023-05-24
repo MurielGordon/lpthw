@@ -126,8 +126,10 @@ def dragon_speaks_no_crystal():
 
     choice = input("> ")
     if "words" in choice:
+        print("You begin to tell the dragon about the wonderful cavern you just left.")
         dragon_death()
     else:
+        print('You lift your arms and struggles to find a way to say "crysal" using just your hands.')
         dragon_death()
 
 
@@ -321,6 +323,7 @@ def wraith_death():
     dead("The cave now has another ghostly resident.")
 
 def dragon_death():
+    print("The dragon interrupts you:")
     print('\n"YOUR PATHETIC ATTEMPTS AT COMMUNICATION DO NOT PLEASE ME!" the dragon interrupts.')
     print('"WHAT GOOD TO ME ARE THESE FEEBLE GESTURES? I CANNOT ADD THEM TO MY HOARDE."')
     dead("The dragon lets loose a torrent of fire from its mouth, burning you to a crisp.")
