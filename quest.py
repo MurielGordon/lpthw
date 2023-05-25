@@ -140,7 +140,7 @@ def no_crystal():
 
 def dragon_speaks_no_crystal():
     import time
-    time.sleep(14)
+    time.sleep(12)
     print('\n\n\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
@@ -175,7 +175,7 @@ def yes_crystal():
 
 def dragon_speaks_yes_crystal():
     import time
-    time.sleep(14)
+    time.sleep(12)
     print('\n\n\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
@@ -260,7 +260,9 @@ def dwarf_talk():
     print("\n\n\nDo you agree and take their way out or do you go your own way?")
 
     choice = input("> ")
-    if "agree" or "take" in choice:
+    if "agree" in choice:
+        mine_cart()
+    elif "take" in choice:
         mine_cart()
     else:
         import time
@@ -268,6 +270,8 @@ def dwarf_talk():
         print("\nYou decide to take your own path out of the cave.")
         print("The dwarves are insulted and you start to drink to cover up the awkwardness.")
         get_too_drunk()
+        import time
+        time.sleep(4)
 
 
 def get_too_drunk():
@@ -299,6 +303,15 @@ def sleep_it_off():
 
     import time
     time.sleep(4)
+    print("\nZzzz")
+    import time
+    time.sleep(2)
+    print("\nZzzz")
+    import time
+    time.sleep(2)
+    print("\nZzzz")
+    import time
+    time.sleep(2)
 
     print("\n\n\n\nYou wake the next day feeling terrible.")
     print("You get up and start on your way.")
@@ -318,10 +331,14 @@ def sleep_it_off():
         import time
         time.sleep(1.8)
         print("\nYou decide to follow your eyes.")
+        import time
+        time.sleep(3)
         print("You walk toward the light, it gets brigther and brighter.")
         print("As you get closer to the light it begins to look strange.")
         print("You get closer and notice the light is flickering, like a lantern.")
         print('A voice cackles "Things are not always what they seem!" and a laugh fills the tunnel.')
+        import time
+        time.sleep(12)
         mine_shaft_death()
 
 
