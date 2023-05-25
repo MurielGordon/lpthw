@@ -74,8 +74,7 @@ def cave_door():
     print("You walk in.")
     import time
     time.sleep(10)
-    print("\n \n \n")
-    print("You walk until you come across a door. It has a knocker on it.")
+    print("\n\n\nYou walk until you come across a door. It has a knocker on it.")
     print("Do you knock on the door or do you walk past it?")
 
     choice = input("> ")
@@ -176,8 +175,8 @@ def yes_crystal():
 
 def dragon_speaks_yes_crystal():
     import time
-    time.sleep(18)
-    print('\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
+    time.sleep(14)
+    print('\n\n\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
     print("Will you show the dragon or tell the dragon?")
@@ -207,13 +206,13 @@ def dragon_bribe():
 def cave_travel():
     import time
     time.sleep(1.8)
-    print("\nYou pass through the dragon's cave and find yourself in a narrow passage.")
+    print("\n\n\nYou pass through the dragon's cave and find yourself in a narrow passage.")
     print("The passage winds left, right, right, then left again.")
     print("You begin to see signs of mining work. A cart track appears,")
     print("then a mine cart, sitting alone on the tracks, half filled with ore.")
     import time
     time.sleep(10)
-    print("\nYou walk further along the tunnel, seeing picks, axes, half-burnt torches, and other signs.")
+    print("\n\n\nYou walk further along the tunnel, seeing picks, axes, half-burnt torches, and other signs.")
     print("You come to a door next to which are hung helmets, more tools, and surplus torches.")
     print("Light seeps out from beneath the door.")
     print("You open it.")
@@ -226,7 +225,7 @@ def cave_travel():
 def dwarven_tavern():
     import time
     time.sleep(1.8)
-    print("\nAs soon as you open the door you are greeted by a wall of noise.")
+    print("\n\n\nAs soon as you open the door you are greeted by a wall of noise.")
     print("The room is filled with dwarves enjoying pints of ale after a long day in the mine.")
     print("They are making jokes and laughing, singing songs and having drinking contests.")
     print("Should you keep to yourself or buy everyone a round?")
@@ -255,10 +254,10 @@ def dwarf_talk():
     print("They tell you they will show you a way out, on one condition:")
     import time
     time.sleep(10)
-    print("\nYou will come back and visit them sometime.")
+    print("\n\n\nYou will come back and visit them sometime.")
     import time
-    time.sleep(3)
-    print("\nDo you agree and take their way out or do you go your own way?")
+    time.sleep(4)
+    print("\n\n\nDo you agree and take their way out or do you go your own way?")
 
     choice = input("> ")
     if "agree" or "take" in choice:
@@ -328,13 +327,15 @@ def mine_cart():
     print("\nYou agree to take the dwarves' way out of the cave.")
     print("You drink for a few more hours, then the dwarves say it's time to go.")
     print("They want to go with you, they say they like taking this route while in their cups.")
-    print("They take you to a mine cart at the top of an incline. They tell you to get in it.")
+    import time
+    time.sleep(10)
+    print("\n\n\nThey take you to a mine cart at the top of an incline. They tell you to get in it.")
     print("You get in, and the others take up positions on both sides of the cart.")
     print('Together they yell "One! Two! Three!" and on three they begin running full tilt,')
     print("pushing the cart along as they run.")
     import time
-    time.sleep(20)
-    print("\n\n\n\n\n\nOne by one they hop in with you, and the cart hurtles along the track.")
+    time.sleep(16)
+    print("\n\n\nOne by one they hop in with you, and the cart hurtles along the track.")
     print("It twists and turns at terrifying speed. The dwarves shout excitedly.")
     print("Then the cart begins to slow, and one of the dwarves employs the hand brake.")
     print("You slow to a stop and the dwarves get out.")
@@ -348,10 +349,12 @@ def mine_cart():
 def exit_cave():
     import time
     time.sleep(1)
-    print("\nYou follow the passage, noting how sweet and clean the air smells.")
+    print("\n\n\nYou follow the passage, noting how sweet and clean the air smells.")
     print("The smell of vegetation and fresh air grows stronger, and the passage grows brighter.")
     print("You find a cave exit, and you walk out to find yourself under the open sky.")
-    print("You laugh with relief. You made it!")
+    import time
+    time.sleep(10)
+    print("\n\n\nYou laugh with relief. You made it!")
     print("You are none the richer in worldly goods,") 
     print("but you've gained memories to last a lifetime.")
     print("THE END.")
@@ -383,7 +386,9 @@ def manticore_death():
     import time
     time.sleep(1.8)
     print("\nYou start down the side path.")
-    print("You hear a sound behind you. Hooves thudding on the forest floor.")
+    import time
+    time.sleep(3)
+    print("\n\nYou hear a sound behind you. Hooves thudding on the forest floor.")
     dead("A manticore has found you. It leaps onto your back and tears your throat out.")
 
 def warg_death():
@@ -394,7 +399,7 @@ def warg_death():
     print("You light a feeble fire to keep away the cold and damp and settle down to rest for the night.")
     import time
     time.sleep(10)
-    print("\nAs you sleep, a warg comes upon your slumbering body.")
+    print("\n\nAs you sleep, a warg comes upon your slumbering body.")
     dead("She eats you, and you haunt the forest near the cave forever.")
 
 def wraith_death():
@@ -409,7 +414,9 @@ def dragon_death():
     import time
     time.sleep(4)
     print("\nThe dragon interrupts you:")
-    print('\n"YOUR PATHETIC ATTEMPTS AT COMMUNICATION DO NOT PLEASE ME!" the dragon interrupts.')
+    import time
+    time.sleep(4)
+    print('\n\n\n"YOUR PATHETIC ATTEMPTS AT COMMUNICATION DO NOT PLEASE ME!" the dragon bellows.')
     print('"WHAT GOOD TO ME ARE THESE FEEBLE GESTURES? I CANNOT ADD THEM TO MY HOARDE."')
     dead("The dragon lets loose a torrent of fire from its mouth, burning you to a crisp.")
 
