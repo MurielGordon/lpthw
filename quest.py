@@ -372,9 +372,11 @@ def fish_death():
     import time
     time.sleep(1.8)
     print("\nYou have chosen the pool. You jump in and begin to swim to the bottom.") 
-    print("It is deeper than it looks, but you keep swimming, undetered.")
-    print("You reach your hand out to grasp the sparkling thing at the bottom of the pool. It is a golden crown with jewels.")
-    print("Suddenly, the faint light from above you grows dim. You are in the shadow of a huge fish.")
+    print("It is deeper than it looks, but you keep swimming, undeterred.")
+    print("You reach your hand out to grasp the sparkling thing at the bottom of the pool. It's a golden crown with jewels.")
+    import time
+    time.sleep(9)
+    print("\nSuddenly, the faint light from above you grows dim. You are in the shadow of a huge fish.")
     dead("The fish eats you, and you join the crown at the bottom of the pool.")
 
 def manticore_death():
@@ -390,7 +392,9 @@ def warg_death():
     print("\nYou shudder and look away from the cave entrance. Something about it doesn't feel right.")
     print("You decide to make camp in a thicket 40 paces from the cave entrance.")
     print("You light a feeble fire to keep away the cold and damp and settle down to rest for the night.")
-    print("As you sleep, a warg comes upon your slumbering body.")
+    import time
+    time.sleep(10)
+    print("\nAs you sleep, a warg comes upon your slumbering body.")
     dead("She eats you, and you haunt the forest near the cave forever.")
 
 def wraith_death():
