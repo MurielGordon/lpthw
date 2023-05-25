@@ -7,9 +7,9 @@ Do you take the left fork or the right fork?""")
 
     choice = input("> ")
 
-    if choice == "left":
+    if "left" in choice:
         pool()
-    elif choice == "right":
+    elif "right" in choice:
         deeper_forest()
     else:
         import time
@@ -140,8 +140,8 @@ def no_crystal():
 
 def dragon_speaks_no_crystal():
     import time
-    time.sleep(1.8)
-    print('\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
+    time.sleep(14)
+    print('\n\n\n"WHAT HAVE YOU TO SHOW ME OF WHAT LIES BEYOND MY CAVERN?" the voice bellows.')
     print('"THE PLACE YOU CAME FROM I CANNOT GO. I AM TOO LARGE. WHAT IS THERE IN THAT PLACE?"')
     print("How will you convey what you have seen to this dragon?")
     print("Will you use words or pantomine?")
@@ -155,7 +155,7 @@ def dragon_speaks_no_crystal():
     else:
         import time
         time.sleep(1.8)
-        print('\nYou lift your arms and struggle to find a way to say "crysal" using just your hands.')
+        print('\nYou lift your arms and struggle to find a way to say "crystal" using just your hands.')
         dragon_death()
 
 
@@ -272,7 +272,7 @@ def dwarf_talk():
 
 def get_too_drunk():
     import time
-    time.sleep(1)
+    time.sleep(3)
     print("\nYou down more and more pints of ale until you become very drunk.")
     print("The tavern begins to empty out as dwarves go back to their homes for the night.")
     print("You find yourself in an empty tavern, with the barkeep wiping down tables and putting away glasses.")
@@ -287,18 +287,20 @@ def get_too_drunk():
         print("\nYou decide to go find a way out tonight.")
         print("You stumble out of the tavern and into the passage you came through.")
         print("You turn down a new passage, too drunk to read the warning signs posted.")
+        import time
+        time.sleep(8)
         mine_shaft_death()
 
 
 def sleep_it_off():
     import time
     time.sleep(1.8)
-    print("\nYou decide to sleep it off. Exploration can wait until the morning. \n\n\n\n")
+    print("\nYou decide to sleep it off. Exploration can wait until the morning.")
 
     import time
     time.sleep(4)
 
-    print("You wake the next day feeling terrible.")
+    print("\n\n\n\nYou wake the next day feeling terrible.")
     print("You get up and start on your way.")
     print("You come to a forked passage.")
     print("One smells nice and fresh, but the other appears to have light at the end of it.")
@@ -309,6 +311,8 @@ def sleep_it_off():
         import time
         time.sleep(1.8)
         print("\nYou decide to follow your nose.")
+        import time
+        time.sleep(2)
         exit_cave()
     else:
         import time
@@ -365,7 +369,7 @@ def exit_cave():
 
 def dead(why):
     print(why, "\nYou have died. So ends the quest of another traveler.")
-    print("THE END.")
+    print("\nTHE END.\n")
     exit(0)
 
 # _______________________________________________________________________________________________
