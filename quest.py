@@ -313,7 +313,7 @@ def sleep_it_off():
     import time
     time.sleep(2)
 
-    print("\n\n\n\nYou wake the next day feeling terrible.")
+    print("\n\n\nYou wake the next day feeling terrible.")
     print("You get up and start on your way.")
     print("You come to a forked passage.")
     print("One smells nice and fresh, but the other appears to have light at the end of it.")
