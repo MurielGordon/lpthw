@@ -1,4 +1,5 @@
 from sys import exit
+from random import randint
 
 def start():
     print("""You walk through a lush green forest at twilight. It's getting dark and you know you're far from home.
