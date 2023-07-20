@@ -1,5 +1,6 @@
 from sys import exit
 
+# hello hi hello
 
 def start():
     print("""You walk through a lush green forest at twilight. It's getting dark and you know you're far from home.
